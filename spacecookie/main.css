@@ -1,0 +1,66 @@
+/*
+Here's a simple and fun JavaScript exercise that introduces kids to cookies (the computer kind) and space exploration. In this exercise, we'll create a "Space Cookie Clicker" game where kids can click on a cookie to collect points and unlock space objects.
+
+This game features a clickable cookie that kids can interact with to earn points. As they accumulate points, they unlock space objects (planet, rocket, and alien). The unlocked space objects become more visible and can be clicked on as well.
+
+Customize the emojis, colors, and unlock conditions to make it even more engaging for kids!
+
+Your task is to modify the UI and functionality of this game.&nbsp;
+
+🍪 Make the icons bigger when clicked
+
+🍪 The icons should have a pointer cursor when hovered to click
+
+🍪 Make the icons only clickable when the child has clicked a certain number of times. For example, I click 3 times to unlock the planet and it becomes clickable. I click 7 times to unlock the rocket and so on...
+
+🍪 Add a fourth emoji that only appears after the first 3 have been clicked
+
+
+ */
+.hidden{
+    display: none;
+}
+
+ #moon,
+ .space-object:hover{
+    cursor: pointer;
+ }
+ body {
+     font-family: 'Arial', sans-serif;
+     background-color: #0c0c0c;
+     color: #fff;
+     text-align: center;
+     padding: 20px;
+ }
+
+ #cookie {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     background-color: #8B4513;
+     cursor: pointer;
+     margin-bottom: 20px;
+ }
+
+ #score {
+     font-size: 24px;
+     margin-bottom: 20px;
+ }
+
+ #spaceObjects {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .space-object {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     margin: 10px;
+     opacity: 0.2;
+     transition: opacity 0.5s;
+ }
+
+ .space-object.unlocked {
+     opacity: 1;
+ }
